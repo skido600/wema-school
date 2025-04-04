@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  display: flex;
+  /* height: 100vh; */
+  align-items: center;
+  justify-content: center;
+
+  margin: 5rem;
+}
+
+.container {
+  border: 1px solid brown;
+  padding: 10px;
+
+  /* overflow-y: auto; */
+
+  h1 {
+    font-size: 18px;
+    margin-top: 1rem;
+  }
+  input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px 10px;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.div_color {
+  width: 100px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  cursor: copy;
+
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.color_generated {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .toast {
+    position: fixed;
+    top: 0;
+    transform: translateY(-100%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s ease-in-out;
+  }
+  .toast.show {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+}
