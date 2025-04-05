@@ -5,5 +5,5 @@ export function Show(message) {
 
   setTimeout(() => {
     toast.classList.remove("show");
-  }, 2000);
+  }, 1000);
 }
